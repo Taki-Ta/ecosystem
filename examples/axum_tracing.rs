@@ -48,7 +48,7 @@ async fn main() -> anyhow::Result<()> {
         .with(opentelemetry)
         .init();
 
-    let addr = "0.0.0.0:8081";
+    let addr = "0.0.0.0:8080";
     let app = Router::new().route("/", get(index_handler));
     let listener = TcpListener::bind(addr).await?;
     info!("Server is running on: {}", addr);
