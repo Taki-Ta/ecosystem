@@ -10,12 +10,14 @@ anyhow = "1.0.83"
 blake3 = "1.5.1"
 bytes = "1.6.0"
 chrono = "0.4.38"
+
 derive_builder = "0.20.0"
 opentelemetry = "0.22.0"
 opentelemetry-otlp = { version = "0.15.0", features = ["tonic"] }
 opentelemetry_sdk = { version = "0.22.1", features = ["rt-tokio"] }
 serde = { version = "1.0.203", features = ["derive"] }
 tokio = { version = "1.37.0", features = ["fs"] }
+tokio-util = { version = "0.7.11", features = ["codec"] }
 tracing = "0.1.40"
 tracing-appender = "0.2.3"
 tracing-opentelemetry = "0.23.0"
@@ -30,3 +32,5 @@ tokio = { version = "1.37.0", features = [
     "net",
     "macros",
 ] }
+dashmap = "5.5.3"
+futures = "0.3.30"
