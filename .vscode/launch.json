@@ -1,0 +1,360 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'ecosystem'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "ecosystem",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'sqlx_chat'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=sqlx_chat",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "sqlx_chat",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'sqlx_chat'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=sqlx_chat",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "sqlx_chat",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'tokio2'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=tokio2",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "tokio2",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'tokio2'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=tokio2",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "tokio2",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'axum_tracing'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=axum_tracing",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "axum_tracing",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'axum_tracing'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=axum_tracing",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "axum_tracing",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'tokio1'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=tokio1",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "tokio1",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'tokio1'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=tokio1",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "tokio1",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'shortener'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=shortener",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "shortener",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'shortener'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=shortener",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "shortener",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'bytes'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=bytes",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "bytes",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'bytes'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=bytes",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "bytes",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'minginx'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=minginx",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "minginx",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'minginx'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=minginx",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "minginx",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'builder'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=builder",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "builder",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'builder'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=builder",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "builder",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'chat'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=chat",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "chat",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'chat'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=chat",
+                    "--package=ecosystem"
+                ],
+                "filter": {
+                    "name": "chat",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

@@ -1,3 +1,18 @@
 ### index handle
 
 GET http://localhost:8081/
+
+
+
+### url shortener
+POST http://127.0.0.1:9876
+Content-Type: application/json
+
+{
+"url": "https://github.com/launchbadge/sqlx/blob/main/examples/postgres/chat/src/main.rs"
+}
+
+
+### url redirect
+Get http://127.0.0.1:9876/A4FS5Q
+Content-Type: text/html
